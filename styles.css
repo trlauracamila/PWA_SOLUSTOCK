@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links button,
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.btn-login {
+  background-color: #ff0101a5 !important; 
+  color: #ffffff !important;           
+  padding: 0.5rem 1.2rem;   
+  border-radius: 6px;       
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-login:hover {
+  background-color: #ff0000 !important;
+}
+
+#hero {
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Inicio.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;            
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #ff0000bc;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ff0000;
+}
+
+#Quienes-somos {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#Quienes-somos h2 {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+.quienes-somos-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quienes-somos-container img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.quienes-somos-container p {
+  flex: 1;
+  min-width: 280px;
+}
+
+#Contacto {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+}
+
+#Contacto h2 {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.8rem;
+  border: none;
+  background-color: #ff0000bb;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #ff0000;
+}
+
+footer {
+  background-color: #4c4747;
+  color: #fff;  
+  text-align: center;
+  padding: 1rem;
+}
+
+/* --- ESTILOS DEL DASHBOARD DE INVENTARIO --- */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  min-height: 75vh;
+}
+
+.inventory-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.card-form {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.card-form h3 {
+  margin-bottom: 1rem;
+}
+
+.inventory-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.custom-select {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.inventory-table th, 
+.inventory-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.inventory-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.inventory-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-delete {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c9302c;
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
+/* --- ESTILOS ADICIONALES PARA LOGIN --- */
+.login-links-extra {
+  text-align: right;
+  margin-top: -0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.forgot-password-link {
+  font-size: 0.88rem;
+  color: #ff0000bb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.register-text-extra {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.register-text-extra a {
+  color: #ff0000bb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-text-extra a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
